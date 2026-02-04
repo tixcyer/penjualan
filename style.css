@@ -1,0 +1,125 @@
+/* =====================
+   RESET & GLOBAL
+===================== */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================
+   JUDUL
+===================== */
+.container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #0d6efd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #084298;
+}
+
+.btn-danger {
+  background: #dc3545;
+}
+
+.btn-danger:hover {
+  background: #a71d2a;
+}
+
+/* =====================
+   TABLE
+===================== */
+/* =====================
+   TABLE (GARIS)
+===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ccc; /* garis luar */
+}
+
+table th {
+  background: #212529;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #444; /* garis header */
+}
+
+table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ddd; /* garis antar kolom & baris */
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9; /* selang-seling */
+}
+
+table tr:hover {
+  background: #e9ecef;
+}
+
+/* =====================
+   IMAGE
+===================== */
+table img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  table th,
+  table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
